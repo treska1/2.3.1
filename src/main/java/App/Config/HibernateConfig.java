@@ -22,8 +22,13 @@ import java.util.Properties;
 @ComponentScan("App")
 @EnableTransactionManagement
 public class HibernateConfig {
-    @Autowired
+
     private Environment env;
+
+    @Autowired
+    public HibernateConfig(Environment env) {
+        this.env = env;
+    }
 
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {

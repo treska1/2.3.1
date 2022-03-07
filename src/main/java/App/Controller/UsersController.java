@@ -13,7 +13,6 @@ import java.util.List;
 @Controller
 public class UsersController {
 
-
     private UserService userService;
 
     @Autowired
