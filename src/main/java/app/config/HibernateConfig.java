@@ -1,4 +1,4 @@
-package App.Config;
+package app.config;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ import java.util.Properties;
 
 @Configuration
 @PropertySource(value = "classpath:db.properties")
-@ComponentScan("App")
+@ComponentScan("app")
 @EnableTransactionManagement
 public class HibernateConfig {
 
@@ -35,7 +35,7 @@ public class HibernateConfig {
         LocalContainerEntityManagerFactoryBean em
                 = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan("App");
+        em.setPackagesToScan("app");
         em.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         em.setJpaProperties(hibernateProperties());
         return em;

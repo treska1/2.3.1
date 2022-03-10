@@ -1,11 +1,9 @@
-package App.UserDAO;
+package app.userDAO;
 
-import App.Model.User;
-import org.springframework.beans.factory.annotation.Autowired;
+import app.model.User;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 

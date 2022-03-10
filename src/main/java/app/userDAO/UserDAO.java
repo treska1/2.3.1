@@ -1,10 +1,10 @@
-package App.Service;
+package app.userDAO;
 
-import App.Model.User;
+import app.model.User;
 
 import java.util.List;
 
-public interface UserService {
+public interface UserDAO {
 
     List getAllUsers();
 

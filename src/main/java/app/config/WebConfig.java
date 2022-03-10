@@ -1,4 +1,4 @@
-package App.Config;
+package app.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -12,7 +12,7 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 
 @Configuration
-@ComponentScan("App")
+@ComponentScan("app")
 @EnableWebMvc
 public class WebConfig implements WebMvcConfigurer {
 
